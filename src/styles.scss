@@ -1,5 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
-
 a {
     text-decoration: none;
+}
+
+.p-card {
+    margin-top: 2rem;
+}
+
+.p-card .p-card-footer {
+    padding: 0;
+}
+
+.p-button:active {
+    transform: scale(0.96);
+}
+
+p-button {
+    margin: 20px;
+}
+.p-card .p-card-title {
+    text-align: center;
 }
