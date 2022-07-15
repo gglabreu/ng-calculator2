@@ -9,6 +9,8 @@ import { ButtonModule } from 'primeng/button';
 import { HomeComponent } from './views/home/home.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { RegisterComponent } from './views/register/register.component';
+import { CalculatorComponent } from './views/calculator/calculator.component';
+import { FormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { RegisterComponent } from './views/register/register.component';
     LoginComponent,
     HomeComponent,
     RegisterComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    FormsModule,
     CardModule,
     ButtonModule,
     InputTextModule

@@ -6,13 +6,15 @@
             <div class="p-grid">
                 <div class="p-col-12">
                     <label for="">Usuário: </label>
-                    <input class="p-col-12" type="text" pInputText>
+                    <input [(ngModel)]="usuario.nome" class="p-col-12" type="text" pInputText>
                 </div>
                 <div class="p-col-12">
                     <label for="">Senha: </label>
-                    <input class="p-col-12" type="text" pInputText>
+                    <input class="p-col-12" type="password" pInputText>
                     <div class="p-col-12">
-                        <p-button class="p-grid p-justify-center" label = "Sign In" icon = "pi pi-arrow-up"></p-button>
+                        <a routerLink="/calculator">
+                            <p-button class="p-grid p-justify-center" label = "Sign In" icon = "pi pi-arrow-up" (onClick)="fazerLogin()" ></p-button>
+                        </a>
                     </div>
                 </div>
             </div>

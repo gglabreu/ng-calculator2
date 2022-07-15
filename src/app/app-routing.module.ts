@@ -1,3 +1,4 @@
+import { CalculatorComponent } from './views/calculator/calculator.component';
 import { RegisterComponent } from './views/register/register.component';
 import { LoginComponent } from './views/login/login.component';
 import { HomeComponent } from './views/home/home.component';
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: "register",
     component: RegisterComponent
+  },
+  {
+    path: "calculator",
+    component: CalculatorComponent
   }
 ];
 

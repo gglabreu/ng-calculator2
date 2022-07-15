@@ -1,5 +1,5 @@
 a {
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 .p-card {
@@ -16,7 +16,16 @@ a {
 
 p-button {
     margin: 20px;
+
 }
-.p-card .p-card-title {
+
+.p-card .p-card-footer {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-card {
     text-align: center;
 }

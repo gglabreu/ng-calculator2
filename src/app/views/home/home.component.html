@@ -1,18 +1,17 @@
 <div class="p-grid p-justify-center">
-    <div class="p-col-10 p-md-6 p-lg-3">
+    <div class="p-col-10 p-md-6 p-lg-4">
       <p-card header="Angular Calculator" subheader="Welcome to Angular Calculator! Please register yourself or, if you're already registered, login." styleClass="p-card-shadow">
         <ng-template pTemplate="header">
           <img src="assets/images/headercard.jpg" alt="card">
         </ng-template>
-          <p>This application was developed with the goal to practice some concepts of front-end development and Angular. Enjoy yourself!</p>
         <ng-template pTemplate="footer">
-        </ng-template>
         <a routerLink="/login">
           <p-button label = "Login" icon = "pi pi-user"></p-button>
       </a>
       <a routerLink="/register">
           <p-button label = "Register" icon = "pi pi-user-plus"></p-button>
       </a>
+      </ng-template>
       </p-card>
     </div>
   </div>
