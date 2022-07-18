@@ -10,11 +10,9 @@
                 </div>
                 <div class="p-col-12">
                     <label for="">Senha: </label>
-                    <input class="p-col-12" type="password" pInputText>
+                    <input [(ngModel)]="usuario.senha" class="p-col-12" type="password" pInputText>
                     <div class="p-col-12">
-                        <a routerLink="/calculator">
-                            <p-button class="p-grid p-justify-center" label = "Sign In" icon = "pi pi-arrow-up" (onClick)="fazerLogin()" ></p-button>
-                        </a>
+                        <p-button class="p-grid p-justify-center" label = "Sign In" icon = "pi pi-arrow-up" (onClick)="fazerLogin()"></p-button>
                     </div>
                 </div>
             </div>

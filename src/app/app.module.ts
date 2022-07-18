@@ -1,3 +1,4 @@
+import { CalculatorService } from './services/calculator.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,6 +12,9 @@ import { InputTextModule } from 'primeng/inputtext';
 import { RegisterComponent } from './views/register/register.component';
 import { CalculatorComponent } from './views/calculator/calculator.component';
 import { FormsModule } from '@angular/forms'; 
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
+import { OperatorPipe } from './pipes/operator.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     HomeComponent,
     RegisterComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    OperatorPipe
   ],
   imports: [
     BrowserModule,
@@ -27,9 +32,11 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     CardModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    MessagesModule,
+    MessageModule
   ],
-  providers: [],
+  providers: [CalculatorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
