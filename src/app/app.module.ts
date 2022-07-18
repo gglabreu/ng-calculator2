@@ -1,3 +1,5 @@
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from './guards/auth.guard';
 import { CalculatorService } from './services/calculator.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -36,7 +38,7 @@ import { OperatorPipe } from './pipes/operator.pipe';
     MessagesModule,
     MessageModule
   ],
-  providers: [CalculatorService],
+  providers: [AuthService, AuthGuard, CalculatorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

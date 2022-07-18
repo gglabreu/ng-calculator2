@@ -1,3 +1,4 @@
+import { AuthGuard } from './guards/auth.guard';
 import { CalculatorComponent } from './views/calculator/calculator.component';
 import { RegisterComponent } from './views/register/register.component';
 import { LoginComponent } from './views/login/login.component';
@@ -20,7 +21,8 @@ const routes: Routes = [
   },
   {
     path: "calculator",
-    component: CalculatorComponent
+    component: CalculatorComponent,
+    canActivate: [AuthGuard]
   }
 ];
 
