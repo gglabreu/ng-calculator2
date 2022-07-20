@@ -4,19 +4,24 @@ import { CalculatorService } from './services/calculator.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms'; 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { CardModule } from 'primeng/card';
-import { LoginComponent } from './views/login/login.component';
 import { ButtonModule } from 'primeng/button';
-import { HomeComponent } from './views/home/home.component';
 import { InputTextModule } from 'primeng/inputtext';
-import { RegisterComponent } from './views/register/register.component';
-import { CalculatorComponent } from './views/calculator/calculator.component';
-import { FormsModule } from '@angular/forms'; 
 import { MessagesModule } from 'primeng/messages';
 import { MessageModule } from 'primeng/message';
+import {TabViewModule} from 'primeng/tabview';
+
+import { LoginComponent } from './views/login/login.component';
+import { HomeComponent } from './views/home/home.component';
+import { RegisterComponent } from './views/register/register.component';
+import { CalculatorComponent } from './views/calculator/calculator.component';
 import { OperatorPipe } from './pipes/operator.pipe';
+import { UserComponent } from './views/user/user.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,8 @@ import { OperatorPipe } from './pipes/operator.pipe';
     HomeComponent,
     RegisterComponent,
     CalculatorComponent,
-    OperatorPipe
+    OperatorPipe,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,8 @@ import { OperatorPipe } from './pipes/operator.pipe';
     ButtonModule,
     InputTextModule,
     MessagesModule,
-    MessageModule
+    MessageModule, 
+    TabViewModule
   ],
   providers: [AuthService, AuthGuard, CalculatorService],
   bootstrap: [AppComponent]

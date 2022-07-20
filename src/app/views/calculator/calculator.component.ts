@@ -1,4 +1,4 @@
-import { CalculatorService } from './../../services/calculator.service'
+import { CalculatorService } from '../../services/calculator.service'
 CalculatorService
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';

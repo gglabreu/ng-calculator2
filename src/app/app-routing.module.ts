@@ -1,3 +1,4 @@
+import { UserComponent } from './views/user/user.component';
 import { AuthGuard } from './guards/auth.guard';
 import { CalculatorComponent } from './views/calculator/calculator.component';
 import { RegisterComponent } from './views/register/register.component';
@@ -8,26 +9,30 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: "",
-    component: HomeComponent
+    path: '',
+    component: HomeComponent,
   },
   {
-    path: "login",
-    component: LoginComponent
+    path: 'login',
+    component: LoginComponent,
   },
   {
-    path: "register",
-    component: RegisterComponent
+    path: 'register',
+    component: RegisterComponent,
   },
   {
-    path: "calculator",
+    path: 'calculator',
     component: CalculatorComponent,
-    canActivate: [AuthGuard]
-  }
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'user',
+    component: UserComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

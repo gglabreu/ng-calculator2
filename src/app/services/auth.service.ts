@@ -17,7 +17,7 @@ export class AuthService {
     usuario.senha === '123456') {
       this.usuarioAutenticado = true 
 
-      this.router.navigate(['/calculator'])
+      this.router.navigate(['/user'])
 
       } else {
         this.usuarioAutenticado = false
